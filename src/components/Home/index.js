@@ -28,6 +28,7 @@ class App extends Component {
         })
       });
 
+      state.posts.reverse();
       this.setState(state);
 
     })
