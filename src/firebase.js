@@ -26,8 +26,12 @@ class Firebase{
   }
   // Fim função login ---
 
+  logout(){
+    return app.auth().signOut();
+  }
+
   async register(nome, email, password){
-    await app.auth().createUserWithEmailAndPassword(nome, email, password)
+    await app.auth().createUserWithEmailAndPassword(email, password)
 
     // Quando um cadastro é realizado, automaticamente é feito o login
     // Pegar o uid do currentUser
@@ -49,6 +53,17 @@ class Firebase{
   // Verificar se tem algum usuário logado
   getCurrent(){
     return app.auth().currentUser && app.auth().currentUser.email;
+  }
+
+  async getUserName(callback){
+    if(!app.auth().currentUser){
+      return null;
+    }
+    else{
+      const uid = app.auth().currentUser.uid;
+      await app.database().ref('usuarios').child(uid).once('value')
+      .then(callback);
+    }
   }
 }
 

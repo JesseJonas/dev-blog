@@ -1,0 +1,53 @@
+div#dashboard{
+  width: 100%;
+  max-width: 930px;
+  margin: 20px auto;
+  padding: 0 30px;
+}
+
+div#dashboard .user-info{
+  display: flex;
+  height: 30px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+div#dashboard .user-info a{
+  text-decoration: none;
+  padding: 8px;
+  border-radius: 4px;
+  font-size: 20px;
+  background-color: #272727;
+  color: #fff;
+  transition: ease-in-out 0.3s;
+}
+
+div#dashboard .user-info a:hover{
+  background-color: crimson;
+  color: #fff;
+}
+
+div#dashboard .info-out{
+  margin-top: 80px;
+  padding: 50px;
+  border: 3px solid #ddd;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+div#dashboard .info-out button{
+  padding: 5px 20px;
+  border: none;
+  border-radius: 5px;
+  background: #272727;
+  color: #fff;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+div#dashboard .info-out p{
+  font-size: 15px;
+  font-weight: bold;
+}

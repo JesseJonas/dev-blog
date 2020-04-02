@@ -1,0 +1,36 @@
+form#register{
+  width: 100%;
+  max-width: 680px;
+  margin: 30px auto 0;
+  padding: 30px;
+  background: #fff;
+  border: 3px solid #ddd;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+form#register input{
+  margin-bottom: 15px;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  padding: 0 20px;
+  font-size: 15px;
+}
+
+form#register button{
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: 0;
+  background: #272727;
+  color: #fff;
+  cursor: pointer;
+  font-size: 20px;
+  transition: ease-in-out 0.2s;
+}
+
+form#register button:hover{
+  background: #202020;
+  color: #fff;
+}
