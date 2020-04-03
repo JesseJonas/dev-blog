@@ -32,11 +32,27 @@ form#new-post input{
   margin-bottom: 10px;
 }
 
+form#new-post img{
+  width: 200;
+  height: 200;
+  margin-bottom: 20px;
+  border-radius: 15px;
+  opacity: 0.8;
+}
+
+form#new-post progress{
+  margin-bottom: 15px;
+}
+
 form#new-post span{
   text-align: center;
   color: crimson;
   font-size: 15px;
   font-weight: bold;
+}
+
+fomr#new-post label{
+  margin-bottom: 15px;
 }
 
 form#new-post input[type="text"]{
